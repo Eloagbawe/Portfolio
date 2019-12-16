@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            color: #331E12;
+            font-family: 'Open Sans', sans-serif;
+            background-image: url("https://res.cloudinary.com/eloagbawe/image/upload/v1574439171/tip7wbxjugr0tiwki0sg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+        nav{
+            font-family: 'Luckiest Guy', cursive; 
+        }
+        nav a{
+            text-decoration: none;
+            font-family: 'Luckiest Guy', cursive;
+            color:#331E12;
+        }
+        nav a:hover{
+            text-decoration: none;
+            color:#CD7605 ;
+        }
+        
+        .nav-container{
+            display:flex;
+            flex-direction: row;
+           
+        }
+        .nav-container div{
+            padding:20px 30px 10px 40px;
+        }
+        .name{
+            margin-left: 30px;
+            padding-top: 100px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        
+        article{
+            width:800px;
+            margin-left:30px;
+            padding-top:100px;
+        }
+        h2{
+            font-weight: bold;
+        }
+        .portfolio-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 40px;
+            
+        }
+        .portfolio-container div{
+            width: 250px;
+            height: 200px;
+            border: 1px solid #CD7605;
+            border-radius: 5px;
+            background-image: url("https://res.cloudinary.com/eloagbawe/image/upload/v1574439171/c1cfrfvvdrzby6iipyet.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .view-project a{
+            text-decoration: none;
+            font-weight: bold;
+            color:#CD7605  ;
+            font-size: 1.3em;
+            float:left;
+        }
+        .view-project a:nth-child(2){
+            padding-left: 115px;
+        }
+        .view-project a:nth-child(3){
+            padding-left: 115px;
+        }
+        .clear{
+            clear: both;
+        }
+        .blog a{
+            color:#CD7605;
+        }
+        .blogpost-container{
+            display:flex;
+            flex-wrap:wrap;
+            margin-left:-10px;
+        }
+        .blogpost {
+            border: 1px solid #CD7605;
+            border-radius: 5px;
+            padding: 10px;
+            margin:10px;
+            width:40%;
+            font-size: 0.8em;
+        }
+        .contact{
+            margin-left: 30px;
+            padding-top: 100px;
+        }
+        .contact img{
+            width:150px;
+            height:200px;
+            border-radius: 10%;
+            float: left;
+            margin: 20px 10px 0 0;
+       }
+       .email{
+        padding: 120px 0 10px 0;
+       }
+       
+       .contact p{
+           padding-bottom: 10px;
+       }
+       .contact i{
+           padding-right:15px;
+       }
+       .contact a{
+           color:#331E12;
+       }
+       .bottom{
+           margin-top:30px;
+       }
+       .bottom a{
+           margin-left:30px;
+           font-family: 'Luckiest Guy', cursive;
+           color: #331E12;
+           text-decoration:none;
+       }
+       .bottom a:hover{
+           color:#CD7605;
+       }
+       footer{
+           text-align:center;
+           font-size:0.9em;
+       }
+      
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container" id="top">
+            <div><a href="#about">About</a></div>
+            <div><a href="#portfolio">Portfolio</a></div>
+            <div><a href="#blog">Blog</a></div>
+            <div><a href="#contact">Contact Me</a></div>
+        </div>
+    </nav>
+    <section class="name">
+        <!--<img src="img1.jpeg" alt="Elo Agbawe's picture">-->
+        <h1>I am Elo Agbawe.</h1>
+        <p>Frontend Developer</p>
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-bootstrap"></i>
+        <i class="fab fa-js"></i>
+    </section>
+    <article class="about" id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempora accusamus cupiditate incidunt doloremque, nesciunt 
+            tempore voluptatibus numquam voluptatum, vitae labore maxime
+             sapiente consectetur quaerat error aut quasi itaque aspernatur
+              provident! Voluptates obcaecati sunt officiis dicta veniam
+               similique soluta a neque libero inventore magnam aspernatur, 
+               nulla molestias, maxime exercitationem rerum dolor. Similique 
+               ipsam minus, placeat suscipit tempore quod ratione corrupti doloremque.</p>  
+    </article>
+    <article class="portfolio" id="portfolio">
+            <h2>Projects</h2>
+            <br>
+            <p>Check out some of my work!</p> 
+            <div class="portfolio-container">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="view-project">
+                <a href="https://codepen.io/Eloagbawe/full/mddLKqb">View Project >>></a>
+                <a href="https://codepen.io/Eloagbawe/full/mddLKqb">View Project >>></a>
+                <a href="https://codepen.io/Eloagbawe/full/mddLKqb">View Project >>></a>
+            </div>
+            <div class="clear"></div>
+    </article>
+    <article class="blog" id="blog">
+        <h2>Blog Posts</h2>
+        <br>
+        <div class="blogpost-container"> 
+        <div class="blogpost">
+        <h3>Vscode Shortcuts</h3>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Tempora accusamus cupiditate incidunt doloremque, nesciunt tempore voluptatibus numquam voluptatum..<a href="">Read more..</a></p>
+        <br>
+        <p><i class="far fa-thumbs-up">28</i>&nbsp;&nbsp;<i class="far fa-thumbs-down">2</i>&nbsp;&nbsp;<i class="far fa-comments">12</i></p>
+        </div>
+        <br>
+        <div class="blogpost">
+        <h3>My Javascript Chronicles</h3>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora accusamus cupiditate incidunt doloremque, nesciunt tempore voluptatibus numquam voluptatum..<a href="">Read more..</a></p>
+        <br>
+        <p><i class="far fa-thumbs-up">26</i>&nbsp; &nbsp;<i class="far fa-thumbs-down">1</i>&nbsp; &nbsp;<i class="far fa-comments">13</i></p>
+          </div>
+        <br>
+        <div class="blogpost">
+        <h3>Amazing Stuff that can be done with css grid and flexbox</h3>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Tempora accusamus cupiditate incidunt doloremque, nesciunt tempore voluptatibus numquam voluptatum..<a href="">Read more..</a></p>
+        <br>  
+        <p><i class="far fa-thumbs-up">32</i> &nbsp;&nbsp;<i class="far fa-thumbs-down">0</i>&nbsp;&nbsp;<i class="far fa-comments">15</i></p>
+        </div>
+        </div>
+        <br>
+        <div>
+        <a href="">See more blog Posts...</a>
+        </div>
+        </article>
+    <section class="contact" id="contact">
+        <h2>Contact me</h2>
+        <img src="https://res.cloudinary.com/eloagbawe/image/upload/v1574439171/dikfaq49fyb8tnmjatdh.jpg" alt="Elo Agbawe's picture">
+        <div class="contact-info">
+        <p class="email">Email: eloagbawe@gmail.com</p>
+        <p>Phone Number: +2348064250498</p>
+        <a href="https://twitter.com/Typical_elo"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.facebook.com/elo.agbawe1"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/elo-agbawe-77a231156/"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://github.com/Eloagbawe"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+        <div class="clear"></div>
+    </section>
+    <div class="bottom">
+        <a href="#top">Back to top</a>
+    </div>
+    <footer>
+        <p>&copy; 2019 Elo Agbawe.</p>
+    </footer>
+</body>
+</html>
