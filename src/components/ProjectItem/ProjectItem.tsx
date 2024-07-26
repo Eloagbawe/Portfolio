@@ -20,21 +20,21 @@ const ProjectItem: FC<ProjectProps> = ({ project }) => {
       <p className="project__tools">{project.tools}</p>
 
       <div className="flex flex-wrap gap-2">
-        <a href={project.link} className="project__link w-fit">
+        <a href={project.link} className="project__link w-fit" target="_blank">
           Live
         </a>
 
         {project.backend ? (
           <>
-            <a href={project.github} className="project__link w-fit">
+            <a href={project.github} className="project__link w-fit" target="_blank">
               Github : Frontend
             </a>
-            <a href={project.backend} className="project__link w-fit">
+            <a href={project.backend} className="project__link w-fit" target="_blank">
               Github : Backend
             </a>
           </>
         ) : (
-          <a href={project.github} className="project__link w-fit">
+          <a href={project.github} className="project__link w-fit" target="_blank">
             Github
           </a>
         )}
