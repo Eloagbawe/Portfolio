@@ -1,3 +1,126 @@
+@use '../styles//partials/mixins' as *;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --text: #373A40;
+  --highlight: #604CC3;
+  --link: #191717;
+  --bg: #F6F5F5;
+  --border: #E4E7EB;
+}
+
+
+body {
+  background-color: var(--bg);
+}
+
+.page-header {
+  @include text-style(2rem, 2.25rem);
+  @include tablet {
+    @include text-style(2.5rem, 2.5rem);
+  }
+}
+
+.sub-header {
+  @include text-style(1.5rem, 1.75rem);
+  @include tablet {
+    @include text-style(2rem, 2rem);
+  }
+}
+
+.body {
+  @include text-style(0.875rem, 1.375rem);
+  @include tablet {
+    @include text-style(0.9375rem, 1.5rem);
+  }
+}
+
+.body-small {
+  @include text-style(0.8125rem, 1.25rem);
+  @include tablet {
+    @include text-style(0.875rem, 1.375rem);
+  }
+}
+
+.section-header {
+  @include text-style(1rem, 1.5rem);
+  @include tablet {
+    @include text-style(1.25rem, 1.75rem);
+  }
+}
+
+.bio {
+  color: var(--text);
+  animation: fade-in 0.5s ease-in-out;
+  &__intro {
+    @extend .page-header;
+  }
+
+  &__text {
+    @extend .body;
+
+    &--highlight {
+      color: var(--highlight);
+    }
+  }
+
+  &__links {
+    @extend .body-small;
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: var(--link);
+    transition: color .0.3s;
+
+    &:hover {
+      color: var(--text);
+    }
+  }
+
+  @include tablet {
+    border-right: 1px solid var(--border);
+  }
+}
+
+.skills {
+  &__img {
+    width: 2rem;
+  }
+}
+
+.projects {
+  &__heading {
+    @extend .section-header;
+    color: var(--text);
+    border-bottom: 1px solid var(--text);
+    width: fit-content;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1
+  }
+}
