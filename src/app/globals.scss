@@ -11,16 +11,48 @@
 }
 
 body {
-  --text: #373A40;
-  --highlight: #604CC3;
-  --link: #191717;
-  --bg: #F6F5F5;
-  --border: #E4E7EB;
+  --bg: #202124;
+  --angular: #0F0F11;
+  --bootstrap: #7952B3;
+  --css: #1572B6;
+  --python: #3776AB;
+  --html: #E34F26;
+  --express: #000000;
+  --mongodb: #47A248;
+  --mysql: #4479A1;
+  --nextjs: #000000;
+  --nodejs: #5FA04E;
+  --react: #61DAFB;
+  --tailwind: #06b6d4;
+  --typescript: #3178C6;
+  --javascript: #F7DF1E;
 }
 
+body.light-mode {
+  --text: #232940;
+  --text2: #373A40;
+  --highlight: #604CC3;
+  --link: #191717;
+  --bg: #F4F7F9;
+  --bg2: #F4F7F9;
+  --border: #E4E7EB;
+  --border2: #B4B4B8;
+}
+
+body.dark-mode {
+  --text: #F8F8FE;
+  --text2: #E6E6E6;
+  --highlight: #604CC3;
+  --link: #656565;
+  --bg: #080808;
+  --bg2: #0E0E0E;
+  --border: #31363F;
+  --border2: #656565;
+}
 
 body {
   background-color: var(--bg);
+  transition: all .2s ease-in-out;
 }
 
 .page-header {
@@ -51,22 +83,24 @@ body {
   }
 }
 
-.section-header {
-  @include text-style(1rem, 1.5rem);
+.section-link {
+  @include text-style(0.9375rem, 1.25rem);
   @include tablet {
-    @include text-style(1.25rem, 1.75rem);
+    @include text-style(1rem, 1.5rem);
   }
 }
 
 .bio {
-  color: var(--text);
   animation: fade-in 0.5s ease-in-out;
   &__intro {
     @extend .page-header;
+    color: var(--text);
+    font-weight: 500;
   }
 
   &__text {
     @extend .body;
+    color: var(--text2);
 
     &--highlight {
       color: var(--highlight);
@@ -92,19 +126,21 @@ body {
   }
 }
 
-.skills {
-  &__img {
-    width: 2rem;
+.content {
+  &__nav {
+    border-bottom: 2px solid var(--border2);
   }
-}
 
-.projects {
-  &__heading {
-    @extend .section-header;
+  &__title {
+    @extend .section-link;
     color: var(--text);
-    border-bottom: 1px solid var(--text);
     width: fit-content;
+    &--active {
+      border-bottom: 2px solid var(--text);
+      padding-bottom: 0.15rem;
+    }
   }
+
 }
 
 @keyframes fade-in {
