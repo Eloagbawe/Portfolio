@@ -1,0 +1,68 @@
+@use "../../styles/partials/mixins" as *;
+@import "../../app/globals.scss";
+
+.badge {
+  color: #f8f8fe;
+  border-radius: 0.25rem;
+
+  &__text {
+    // text-shadow: 0.2px 1px 2px #0E0E0E;
+    font-size: 0.875rem;
+  }
+
+  &--angular {
+    background-color: var(--angular);
+  }
+
+  &--javascript {
+    background-color: var(--javascript);
+  }
+
+  &--css {
+    background-color: var(--css);
+  }
+
+  &--bootstrap {
+    background-color: var(--bootstrap);
+  }
+
+  &--python {
+    background-color: var(--python);
+  }
+
+  &--html {
+    background-color: var(--html);
+  }
+
+  &--express {
+    background-color: var(--express);
+  }
+
+  &--mongodb {
+    background-color: var(--mongodb);
+  }
+
+  &--mysql {
+    background-color: var(--mysql);
+  }
+
+  &--nextjs {
+    background-color: var(--nextjs);
+  }
+
+  &--nodejs {
+    background-color: var(--nodejs);
+  }
+
+  &--react {
+    background-color: var(--react);
+  }
+
+  &--tailwind {
+    background-color: var(--tailwind);
+  }
+
+  &--typescript {
+    background-color: var(--typescript);
+  }
+}
